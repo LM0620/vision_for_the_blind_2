@@ -36,7 +36,10 @@ $ python
 
 Also you need install all libraries in requirements.txt.
 
+`pip3 install -r requirements.txt`
+
 Now there are two ways to use vision_for_the_blind_2-api and command line tool. We'll talk about them separately.
+
 ### API
 Our rest API is developed using django. To use it, start it in your server.  
 Go to {project root}/vision_for_the_blind_2, then run the following command in terminal.  
