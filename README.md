@@ -19,7 +19,9 @@ Currently, the following file formats are supported:
 
 To start, there are a few requirements.  
 You need to install pytesseract.  
+
 `pip install pytesseract`  
+
 Find the directory of installation. If you are in MacOS, it's likely to be `/usr/local/Cellar/tesseract/{version}/bin/tesseract`.  
 Then go to `{project root directory}/config/config.py`.
 Paste directory of installation to pytesseract_location property.  
@@ -38,7 +40,10 @@ Now there are two ways to use vision_for_the_blind_2-api and command line tool. 
 ### API
 Our rest API is developed using django. To use it, start it in your server.  
 Go to {project root}/vision_for_the_blind_2, then run the following command in terminal.  
+
 `python manage.py runserver`  
+
+
 API is running and can accept requests.  
 Now to read text from a picture, you need a rest client. We'll use [Postman](https://www.postman.com/) as an example.  
 method: POST  
@@ -53,10 +58,12 @@ Then you can send the request. You will get a plain text back.
 ### Command Line Tool
 You can also use vision_for_the_blind_2 as command line tool.  
 Go to {project root}/vision_for_the_blind_2, then you can run commands in terminal.   
-`
-python vision_for_blind.py {full path of image}  
-`  
-Make sure you have the full path, including the extension, of the image.  
+
+`python vision_for_blind.py {full path of image}  `  
+
+
+Make sure you have the full path, including the extension, of the image. Normally in MacOS, full path looks like `'Users/{your username}/...'`  
+
 Like the API, you can also have option to capture the info with command like this:  
 `python vision_for_blind.py {full path of image} c`  
 You can also run the following to extract text, even though it's the default option:  
