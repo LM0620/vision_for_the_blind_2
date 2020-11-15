@@ -4,18 +4,13 @@ It can extract text from an image, or capture information from the image.
 
 Currently, the following file formats are supported:
 
-- Windows bitmaps - *.bmp, *.dib (always supported)
-- JPEG files - *.jpeg, *.jpg, *.jpe (see the Note section)
-- JPEG 2000 files - *.jp2 (see the Note section)
-- Portable Network Graphics - *.png (see the Note section)
-- WebP - *.webp (see the Note section)
-- Portable image format - *.pbm, *.pgm, *.ppm *.pxm, *.pnm (always supported)
-- PFM files - *.pfm (see the Note section)
-- Sun rasters - *.sr, *.ras (always supported)
-- TIFF files - *.tiff, *.tif (see the Note section)
-- OpenEXR Image files - *.exr (see the Note section)
-- Radiance HDR - *.hdr, *.pic (always supported)
-- Raster and Vector geospatial data supported by GDAL (see the Note section)  
+- Windows bitmaps - *.bmp, *.dib
+- JPEG files - *.jpeg, *.jpg, *.jpe
+- Portable Network Graphics - *.png 
+- Portable image format - *.pbm, *.pgm, *.ppm *.pxm, *.pnm 
+- Sun rasters - *.sr, *.ras
+- TIFF files - *.tiff, *.tif 
+- Radiance HDR - *.hdr, *.pic
 
 To start, there are a few requirements.  
 You need to install pytesseract.  
