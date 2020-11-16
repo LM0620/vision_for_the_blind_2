@@ -12,7 +12,10 @@ Currently, the following file formats are supported:
 - TIFF files - *.tiff, *.tif 
 - Radiance HDR - *.hdr, *.pic
 
-To start, there are a few requirements.  
+To start, there are a few requirements. 
+ 
+Please download the [model](https://drive.google.com/file/d/1yGfKPnTp29Va1ktGO9Or7phTgTvRqGPA/view?usp=sharing).  
+
 You need to install pytesseract.  
 
 `pip install pytesseract`  
@@ -22,7 +25,7 @@ Then go to `{project root directory}/config/config.py`.
 Paste directory of installation to pytesseract_location property.  
 
 For other properties in `config.py`, please update them with your local directory where you store `model_9.h5` and `tokenizer.p`.  
-
+model_9.h5 is the model you just downloaded and tokenizer.p is included in github.
 
 You need to download modules in nltk library like below.
 ```
