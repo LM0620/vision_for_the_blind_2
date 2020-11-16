@@ -4,6 +4,7 @@ from rest_framework.parsers import MultiPartParser, FormParser
 from .serializers import FileSerializer
 from rest_framework import status
 from vision_for_the_blind_2 import text as txt
+from vision_for_the_blind_2 import caption_generator as capture
 from os import path as path
 
 
@@ -23,12 +24,10 @@ class FileView(APIView):
                 option = request.POST.get('option')
                 if hasattr(request.POST, 'option'):
                     option = request.POST['option']
-                    print(option)
-                    has_option = True
                 if option and option == 'c':
                     print('image capturing...')
-                    # TODO
-                    return Response("place holder for image capture", status=status.HTTP_201_CREATED)
+                    output = capture.capture_image(new_path)
+                    return Response(output, status=status.HTTP_201_CREATED)
                 else:
                     output = txt.get_setence(new_path)
                     return Response(output, status=status.HTTP_201_CREATED)

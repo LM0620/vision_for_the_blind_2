@@ -1,4 +1,5 @@
 from vision_for_the_blind_2 import text as txt
+from vision_for_the_blind_2 import caption_generator as capture
 import sys
 import os
 
@@ -12,7 +13,8 @@ def main():
             print('Invalid command')
         elif len(sys.argv) > 2 and sys.argv[2] == 'c':
             print('image capturing...')
-            #TODO image capture
+            output = capture.capture_image(file_name)
+            print(output)
         else:
             print('extracting text...')
             output = txt.get_setence(file_name)

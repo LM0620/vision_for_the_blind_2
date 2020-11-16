@@ -21,6 +21,9 @@ Find the directory of installation. If you are in MacOS, it's likely to be `/usr
 Then go to `{project root directory}/config/config.py`.
 Paste directory of installation to pytesseract_location property.  
 
+For other properties in `config.py`, please update them with your local directory where you store `model_9.h5` and `tokenizer.p`.  
+
+
 You need to download modules in nltk library like below.
 ```
 $ python
@@ -60,7 +63,7 @@ Go to {project root}/vision_for_the_blind_2, then you can run commands in termin
 `python vision_for_blind.py {full path of image}  `  
 
 
-Make sure you have the full path, including the extension, of the image. Normally in MacOS, full path looks like `'Users/{your username}/...'`  
+Make sure you have the full path, **including the extension**, of the image. Normally in MacOS, full path looks like `'Users/{your username}/...'`  
 
 Like the API, you can also have option to capture the info with command like this:  
 `python vision_for_blind.py {full path of image} c`  
