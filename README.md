@@ -37,7 +37,7 @@ $ python
 
 Also you need install all libraries in requirements.txt.
 
-`pip3 install -r requirements.txt`
+`pip install -r requirements.txt`
 
 Now there are two ways to use vision_for_the_blind_2-api and command line tool. We'll talk about them separately.
 
