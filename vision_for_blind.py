@@ -17,7 +17,8 @@ def main():
             print(output)
         else:
             print('extracting text...')
-            output = txt.get_setence(file_name)
+            new_path = txt.image_bw(file_name)
+            output = txt.get_setence(new_path)
             for item in output:
                 item = os.linesep.join([s for s in item.splitlines() if s])
                 print(item)

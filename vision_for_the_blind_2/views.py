@@ -29,6 +29,7 @@ class FileView(APIView):
                     output = capture.capture_image(new_path)
                     return Response(output, status=status.HTTP_201_CREATED)
                 else:
+                    new_path = txt.image_bw(new_path)
                     output = txt.get_setence(new_path)
                     return Response(output, status=status.HTTP_201_CREATED)
             else:
