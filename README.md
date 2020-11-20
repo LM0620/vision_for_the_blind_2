@@ -58,7 +58,10 @@ You'll need two attributes in request body.
 - file, this is the file you want text from. Make sure you are using a tool that can send files.  
 - option, option is optional. You have two options here:  
 1, t (default) - extract text from an image  
-2, c - capture information from an image (this is a dog for example.)  
+2, c - capture information from an image (this is a dog for example.)
+
+![](.README_images/a127ad15.png)
+  
 Then you can send the request. You will get a plain text back.
 
 ### Command Line Tool
