@@ -1,3 +1,4 @@
+# Huiying lin: 100%
 from keras.preprocessing.sequence import pad_sequences
 from keras.applications.xception import Xception
 from keras.models import load_model

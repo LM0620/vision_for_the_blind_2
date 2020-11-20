@@ -1,3 +1,5 @@
+# Li Ma: 95%
+# Fan Lin: 5%
 from vision_for_the_blind_2 import text as txt
 from vision_for_the_blind_2 import caption_generator as capture
 import sys

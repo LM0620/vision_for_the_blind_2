@@ -1,3 +1,4 @@
+# Li Ma: 100%
 """vision_for_the_blind_2 URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:

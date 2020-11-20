@@ -1,3 +1,4 @@
+# Fan Lin: 100%
 import pytesseract
 import cv2
 from config import config

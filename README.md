@@ -37,7 +37,9 @@ $ python
 
 Also you need install all libraries in requirements.txt.
 
-`pip install -r requirements.txt`
+`pip install -r requirements.txt`  
+
+Tensorflow doesn't work with Python with version > 3.8 in Windows. So if you are working on Windows, please use some lower version, 3.7.0 for example.   
 
 Now there are two ways to use vision_for_the_blind_2-api and command line tool. We'll talk about them separately.
 
@@ -71,5 +73,5 @@ Make sure you have the full path, **including the extension**, of the image. Nor
 Like the API, you can also have option to capture the info with command like this:  
 `python vision_for_blind.py {full path of image} c`  
 You can also run the following to extract text, even though it's the default option:  
- `python vision_for_blind.py {full path of image} t`  
+`python vision_for_blind.py {full path of image} t`  
  
